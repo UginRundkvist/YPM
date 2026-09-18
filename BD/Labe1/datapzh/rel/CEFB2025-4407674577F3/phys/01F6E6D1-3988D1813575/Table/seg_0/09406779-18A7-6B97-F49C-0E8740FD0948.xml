@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ЭТАП" directorySegmentName="seg_0" id="09406779-18A7-6B97-F49C-0E8740FD0948">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="дата_окончания" id="0F4229D7-358A-5A83-2FD8-00918FA7A9ED">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="СТАДИЯ_номер_стадии" id="22068C13-C78C-DB0F-DE1A-BD5D7B42BA4C">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="дата_начала" id="811D8408-12C2-E413-1393-CFA9BA0534D7">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="ГРУППА_код_группы" id="839776B0-1DC2-6904-0BE6-8697E5B13EAB">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="номер_этапа" id="89B4BB28-2469-9E89-334C-E442CB4B5264">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="наименование" id="D8A2D416-126D-0263-E052-3969374D7922">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+<ColumnProxy name="СТАДИЯ_ПРОЕКТ_код_проекта" id="EAF302A8-0414-7C0B-94CE-98B513CB47A1">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ЭТАП_СТАДИЯ_FK" id="97E16AED-BEF2-7D18-FCDB-EC5F5F50CFED">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ЭТАП_ГРУППА_FK" id="C4CB7D13-8928-42FF-B50C-04C71DDB1FA5">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ЭТАП_PK" id="9BB3177C-4290-AFB4-59CA-2DD092EEC463">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

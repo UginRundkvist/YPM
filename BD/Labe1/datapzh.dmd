@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="datapzh" id="22458F96-175D-0E2D-A14C-52511CF23015" version="3.5">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:19:44 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>22458F96-175D-0E2D-A14C-52511CF23015</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="E5D5739A-5A5B-2FF3-38FF-442DE90B49CA">
+<designStoragePath>/model</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

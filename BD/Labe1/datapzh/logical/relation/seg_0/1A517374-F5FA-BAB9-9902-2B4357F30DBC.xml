@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="СОТРУДНИК_ГРУППА_FK" directorySegmentName="seg_0" id="1A517374-F5FA-BAB9-9902-2B4357F30DBC">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>1DA4CA33-5159-C46F-6E02-B702FD6F271C</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<sourcePk>71BF86F3-BE93-5E9C-4C5A-A15B267DC163</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3F47892D-F8A9-CB1C-6C42-A57E2027D7C8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9FCC9599-39E4-8EFD-9825-20B4418A3B3D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

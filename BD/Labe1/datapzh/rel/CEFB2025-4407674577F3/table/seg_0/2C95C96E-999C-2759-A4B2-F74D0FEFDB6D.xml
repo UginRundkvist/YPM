@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C95C96E-999C-2759-A4B2-F74D0FEFDB6D" name="СОТРУДНИК">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>81B751E2-D846-37E2-B1AE-07018B442887</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="код_сотрудника" id="82C4BF7C-6B5E-B68E-5ECF-E3454C3369BD">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>A6CA9B73-5F3A-EC28-2BE2-63E05AF32933</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ГРУППА_код_группы" id="05FCC81F-DE21-9C74-D965-DD0F8F7A302C">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>A6D33C85-9DDB-BAD2-27B4-DB80F2EF789C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DA4CA33-5159-C46F-6E02-B702FD6F271C" referredColumn="58E8DF6C-F5FC-CE67-484D-B852CA13042B"/>
+</associations>
+</Column>
+<Column name="КВАЛИФИКАЦИЯ_код_квалификации" id="87935AF8-9779-0274-83B0-B85551DCEDDB">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>050B4CCA-5AAA-F925-950B-6D3276032F7A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31A82F51-347B-109F-9781-2554D8488487" referredColumn="1E0BFA73-148D-D6B1-CDCB-E7B91793C32D"/>
+</associations>
+</Column>
+<Column name="ФИО" id="2DE67B9E-95DF-CD4A-11A3-55AF502EC3F8">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>B8558F79-23C3-870C-02DF-04D13E6073DD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="имя" id="0B5621B4-2E70-6197-9C55-187D25C19C93">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>46A5AB68-3380-D626-90C8-AE7741330785</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1462FCCC-7D8B-0D35-97F9-B4131896F4B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="отчество" id="91D11000-6E83-86DD-DAFF-8302C2A4C514">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>F34B6277-8E20-C5FF-6639-3938A45B67C8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1462FCCC-7D8B-0D35-97F9-B4131896F4B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="должность" id="34CE896A-0F19-06F1-D46D-1E31709C0181">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>EA2E3E62-3335-CFDE-4A05-575D528670BD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="профиль_подготовки" id="30D3469E-3651-7B4D-ED94-A8DB10F21B80">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>257C3948-2645-4698-51A2-6B777109EC2C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="дата_приёма" id="E59BB8A8-B013-BD7F-2280-3F6D48D343A1">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>CBB647A3-72B4-9890-1A12-0508C89DB060</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0A8A5224-BF9B-D96C-4E86-BE3E27FB9D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5189B265-1573-2914-B6F6-EEB7BB193E75" name="СОТРУДНИК_PK">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>32F56276-7D77-3857-4326-EB3064D090AF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82C4BF7C-6B5E-B68E-5ECF-E3454C3369BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="192FBBA4-2599-63EC-E782-DFC5ABC05CB3" name="СОТРУДНИК_ГРУППА_FK">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05FCC81F-DE21-9C74-D965-DD0F8F7A302C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AA0E087-223F-A5A1-444A-D05EFD11B92A" name="СОТРУДНИК_КВАЛИФИКАЦИЯ_FK">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87935AF8-9779-0274-83B0-B85551DCEDDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

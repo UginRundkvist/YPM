@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0BB04DC-A13B-1165-12F4-FA2DC5D63F94" name="СТАДИЯ">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>7738DB82-D7D3-B6E8-3FE6-15F8B82E8E76</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ПРОЕКТ_код_проекта" id="4D2B40A2-E63B-D2A9-E644-51D44968959E">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>B1D694CE-091B-2638-E41D-29B1CF2C5059</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1385E9C-D3ED-0A26-C1AF-7E90652A2D12" referredColumn="ACF09D86-780B-3059-8CA1-D0FEB147692D"/>
+</associations>
+</Column>
+<Column name="номер_стадии" id="EEA67E48-41C6-6561-A6CE-8433AE12501D">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>5150F83B-F2B0-1D94-D7C1-E21161AA7D2A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="наименование" id="1B93377A-A811-EC0A-6372-8D2FDDA9CBC9">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>A79BCB97-9C31-B0F0-B029-9F6BAC29FCF7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="дата_начала" id="4D15635B-22BB-8426-5710-C06D265E08EF">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>B2E79766-D54B-D3F2-3669-9D974CCF4B01</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0A8A5224-BF9B-D96C-4E86-BE3E27FB9D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="дата_окончания" id="60E09F20-0071-127A-E0B1-EBC01DBC19AD">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>659AB2A1-5FAE-40E0-DB97-3EA9CE23F20A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0A8A5224-BF9B-D96C-4E86-BE3E27FB9D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CC8C9C0-F5D1-DD9C-0E9F-AFDF1B2FEFE3" name="СТАДИЯ_PK">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>1F54D2BB-DE05-85C2-C9B8-C1B47DE29E4F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D2B40A2-E63B-D2A9-E644-51D44968959E"/>
+<colUsage columnID="EEA67E48-41C6-6561-A6CE-8433AE12501D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4746B6D9-5732-2286-028E-559AEDB132AD" name="СТАДИЯ_ПРОЕКТ_FK">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D2B40A2-E63B-D2A9-E644-51D44968959E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

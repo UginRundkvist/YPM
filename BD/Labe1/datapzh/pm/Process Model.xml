@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="AB853CBC-80D8-397B-488C-5D1DAD5E009F">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:19:44 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

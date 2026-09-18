@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DDD915F6-DFB1-C427-A96C-78919D98A15A" containerWithKeyObject="E28FD0F1-97B8-C758-FC9D-3B3FFD1487B7" localFKIndex="1A0DA1C7-F796-5958-593D-DAAE84067F3A" name="НАЗНАЧЕНИЕ_ОПЕРАЦИЯ_FK">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>FB72457F-DBC6-5DAF-5BA6-8BA17930C4F4</importedID>
+<referredTableLongName>ОПЕРАЦИЯ</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E5A2DB66-85C3-B6DD-9D6E-AA5A2E0AC8B8</referredTableID>
+<keyObject>7BCB8CA8-1732-3D7A-83FF-7C83AB61ADFA</keyObject>
+<referredKeyID>7BCB8CA8-1732-3D7A-83FF-7C83AB61ADFA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ЭТАП_СТАДИЯ_ПРОЕКТ_код_проекта,ЭТАП_СТАДИЯ_номер_стадии,ЭТАП_номер_этапа,ключ_операции</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

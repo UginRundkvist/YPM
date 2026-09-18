@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="315B08BA-0374-88EB-F6AE-BA3429AC48EF" name="НАЗНАЧЕНИЕ">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>E28FD0F1-97B8-C758-FC9D-3B3FFD1487B7</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="код_проекта" id="6CD5140B-6C90-A952-DA80-FC9EBB726259">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>41B68CC5-5F7A-E369-6AB4-A8DD4796158A</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<referedAttribute>29A08613-6819-48E2-07C3-7DC241F9B2F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="номер_стадии" id="F623B293-BE12-5204-02BE-B3C079F94F3C">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>41B68CC5-5F7A-E369-6AB4-A8DD4796158A</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<referedAttribute>CDC85F2A-EFDA-04DC-ED12-7C6ED94D0B94</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="номер_этапа" id="645EB874-326B-4E52-52D6-9A05C4DED9B7">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>41B68CC5-5F7A-E369-6AB4-A8DD4796158A</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<referedAttribute>215BB696-E85C-57F7-A0DE-3756163EA099</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ключ_операции" id="6636CC74-EF5F-10B2-53B6-826A28B8BEE3">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>41B68CC5-5F7A-E369-6AB4-A8DD4796158A</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<referedAttribute>E1C1D140-4524-E9E7-C22D-5A6DDAC56CF5</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="код_сотрудника" id="43BE5210-133A-D9F3-991A-68A27CE02C59">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>E7B92E50-3CBC-CC91-EDD4-C6E143B5E021</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<referedAttribute>0B0E1C2E-6F73-5DBA-6AC9-05102A6357C4</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="роль" id="B7D67312-AD80-31FD-F00A-9ECFAF7297C5">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>BEA069E3-8C77-C7FD-37D5-DD000DD44045</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="дата_назначения" id="17A7C0E3-AB33-279F-D486-7C5DE7B6C9BE">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>710676C6-22F3-3214-F8E6-761FA1F26260</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ABE7AB7D-7591-1477-9182-E98E6E0ACE4F" name="НАЗНАЧЕНИЕ PK">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>10646A30-20C1-935C-4D94-DDCDCDA266AD</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6CD5140B-6C90-A952-DA80-FC9EBB726259</attributeRef>
+<attributeRef>F623B293-BE12-5204-02BE-B3C079F94F3C</attributeRef>
+<attributeRef>645EB874-326B-4E52-52D6-9A05C4DED9B7</attributeRef>
+<attributeRef>6636CC74-EF5F-10B2-53B6-826A28B8BEE3</attributeRef>
+<attributeRef>43BE5210-133A-D9F3-991A-68A27CE02C59</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

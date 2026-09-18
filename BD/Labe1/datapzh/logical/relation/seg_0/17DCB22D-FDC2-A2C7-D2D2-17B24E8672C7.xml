@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="СОТРУДНИК_КВАЛИФИКАЦИЯ_FK" directorySegmentName="seg_0" id="17DCB22D-FDC2-A2C7-D2D2-17B24E8672C7">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>31A82F51-347B-109F-9781-2554D8488487</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<sourcePk>601E4D24-353A-4716-7BF6-8EE7C43E6585</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C985CB71-1C2A-B5A6-D94F-2F2B6948546F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9FCC9599-39E4-8EFD-9825-20B4418A3B3D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

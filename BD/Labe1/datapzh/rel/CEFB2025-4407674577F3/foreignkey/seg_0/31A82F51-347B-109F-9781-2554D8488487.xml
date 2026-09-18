@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="31A82F51-347B-109F-9781-2554D8488487" containerWithKeyObject="2C95C96E-999C-2759-A4B2-F74D0FEFDB6D" localFKIndex="4AA0E087-223F-A5A1-444A-D05EFD11B92A" name="СОТРУДНИК_КВАЛИФИКАЦИЯ_FK">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>1C90D606-3D33-F946-DF11-F436B032EF43</importedID>
+<referredTableLongName>КВАЛИФИКАЦИЯ</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8E91D9E5-781B-9A7A-11F5-233802304C2C</referredTableID>
+<keyObject>2585924A-E609-6B8E-EBFE-DA0B0E78F271</keyObject>
+<referredKeyID>2585924A-E609-6B8E-EBFE-DA0B0E78F271</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>код_квалификации</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

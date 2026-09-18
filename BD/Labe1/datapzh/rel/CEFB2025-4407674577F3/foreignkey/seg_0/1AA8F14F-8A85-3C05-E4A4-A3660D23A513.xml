@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1AA8F14F-8A85-3C05-E4A4-A3660D23A513" containerWithKeyObject="084BB63D-0EA1-95E6-C3B4-7C8FB30678D3" localFKIndex="CA9644D0-8B62-AAEA-D5E5-7797821DB253" name="ПРОЕКТ_НАПРАВЛЕНИЕ_FK">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>D4DDCBE1-32A2-0357-C6B6-DC88E8D7A062</importedID>
+<referredTableLongName>НАПРАВЛЕНИЕ</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9EB7B7BC-7B2E-48AA-1143-689E1B59664B</referredTableID>
+<keyObject>25BDBB85-68D5-40FF-5C92-077AE4448892</keyObject>
+<referredKeyID>25BDBB85-68D5-40FF-5C92-077AE4448892</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>код_направления</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

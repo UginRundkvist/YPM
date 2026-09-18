@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="176872B1-9686-6349-5A12-C02AC0371E85" containerWithKeyObject="09406779-18A7-6B97-F49C-0E8740FD0948" localFKIndex="97E16AED-BEF2-7D18-FCDB-EC5F5F50CFED" name="ЭТАП_СТАДИЯ_FK">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>7781303D-8C18-F659-EB96-B215C2D94B09</importedID>
+<referredTableLongName>СТАДИЯ</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C0BB04DC-A13B-1165-12F4-FA2DC5D63F94</referredTableID>
+<keyObject>4CC8C9C0-F5D1-DD9C-0E9F-AFDF1B2FEFE3</keyObject>
+<referredKeyID>4CC8C9C0-F5D1-DD9C-0E9F-AFDF1B2FEFE3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ПРОЕКТ_код_проекта,номер_стадии</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

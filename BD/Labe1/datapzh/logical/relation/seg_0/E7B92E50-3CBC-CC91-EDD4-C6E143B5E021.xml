@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="НАЗНАЧЕНИЕ_СОТРУДНИК_FK" directorySegmentName="seg_0" id="E7B92E50-3CBC-CC91-EDD4-C6E143B5E021">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>491E3FD6-177A-2AF7-3A08-6BF03BC46D5B</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<sourcePk>FE037F55-65E2-B02D-4D71-02A98693FEB0</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9FCC9599-39E4-8EFD-9825-20B4418A3B3D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>315B08BA-0374-88EB-F6AE-BA3429AC48EF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

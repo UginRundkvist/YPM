@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E28FD0F1-97B8-C758-FC9D-3B3FFD1487B7" name="НАЗНАЧЕНИЕ">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>ED62B195-F334-A695-AD38-6A1889B0820E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ОПЕРАЦИЯ_ЭТАП_СТАДИЯ_код_проекта" id="ADB8C0C1-A7B8-374F-8F53-1929420B568D">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>27038011-6CB7-24B6-7B6A-A75A5DC91177</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDD915F6-DFB1-C427-A96C-78919D98A15A" referredColumn="989DB1B5-91AD-DE00-2E67-E959AD0A305D"/>
+</associations>
+</Column>
+<Column name="ОПЕРАЦИЯ_ЭТАП_СТАДИЯ_номер_стадии" id="2384006B-1042-45B2-F710-0312110045F0">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>D6F82411-728F-E360-37FE-152D473BE4E4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDD915F6-DFB1-C427-A96C-78919D98A15A" referredColumn="339D0A4E-03C5-4019-4E45-DD6D7EEAC3A2"/>
+</associations>
+</Column>
+<Column name="ОПЕРАЦИЯ_ЭТАП_номер_этапа" id="D7E15243-0216-0AF2-EA95-AA00EB718AB8">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>24AB0561-F9C2-FE42-09E1-2E9BF6FE6A29</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDD915F6-DFB1-C427-A96C-78919D98A15A" referredColumn="ECFE08E7-69EA-210B-27F2-1E11A5AF221B"/>
+</associations>
+</Column>
+<Column name="ОПЕРАЦИЯ_ключ_операции" id="F3E61D17-3BAE-613E-9350-D08FB3331ADB">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>E6F76693-21CF-8891-6965-6EDB157F5D30</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DDD915F6-DFB1-C427-A96C-78919D98A15A" referredColumn="FC5E0FFE-9C69-3298-042D-9A09FDDB1C88"/>
+</associations>
+</Column>
+<Column name="СОТРУДНИК_код_сотрудника" id="B6DBFD9F-3CDB-FE51-4B02-600192691E60">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>415B721F-609B-A10E-2381-E4470C254BA1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="491E3FD6-177A-2AF7-3A08-6BF03BC46D5B" referredColumn="82C4BF7C-6B5E-B68E-5ECF-E3454C3369BD"/>
+</associations>
+</Column>
+<Column name="роль" id="BEA069E3-8C77-C7FD-37D5-DD000DD44045">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>FC7F8C53-BB2B-89BA-3C65-B4798B6F6230</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="дата_назначения" id="710676C6-22F3-3214-F8E6-761FA1F26260">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>AD6E7C00-6865-558F-7A97-4BD4AFB29459</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>0A8A5224-BF9B-D96C-4E86-BE3E27FB9D2D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10646A30-20C1-935C-4D94-DDCDCDA266AD" name="НАЗНАЧЕНИЕ_PK">
+<sourceDDLFile>model.sql</sourceDDLFile>
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<importedID>6F6B9185-4A9D-7702-24E4-CF1A9109A6F9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADB8C0C1-A7B8-374F-8F53-1929420B568D"/>
+<colUsage columnID="2384006B-1042-45B2-F710-0312110045F0"/>
+<colUsage columnID="D7E15243-0216-0AF2-EA95-AA00EB718AB8"/>
+<colUsage columnID="F3E61D17-3BAE-613E-9350-D08FB3331ADB"/>
+<colUsage columnID="B6DBFD9F-3CDB-FE51-4B02-600192691E60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A0DA1C7-F796-5958-593D-DAAE84067F3A" name="НАЗНАЧЕНИЕ_ОПЕРАЦИЯ_FK">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADB8C0C1-A7B8-374F-8F53-1929420B568D"/>
+<colUsage columnID="2384006B-1042-45B2-F710-0312110045F0"/>
+<colUsage columnID="D7E15243-0216-0AF2-EA95-AA00EB718AB8"/>
+<colUsage columnID="F3E61D17-3BAE-613E-9350-D08FB3331ADB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57DC5D8A-4403-16CA-1E3A-68CF1217C401" name="НАЗНАЧЕНИЕ_СОТРУДНИК_FK">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:21:33 UTC</createdTime>
+<ownerDesignName>datapzh</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6DBFD9F-3CDB-FE51-4B02-600192691E60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

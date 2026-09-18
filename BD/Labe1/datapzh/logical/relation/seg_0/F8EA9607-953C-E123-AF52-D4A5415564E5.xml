@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ЭТАП_СТАДИЯ_FK" directorySegmentName="seg_0" id="F8EA9607-953C-E123-AF52-D4A5415564E5">
+<createdBy>zerd</createdBy>
+<createdTime>2026-09-18 14:28:18 UTC</createdTime>
+<generatorID>176872B1-9686-6349-5A12-C02AC0371E85</generatorID>
+<ownerDesignName>datapzh</ownerDesignName>
+<engineerTo>
+<item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
+</engineerTo>
+<sourcePk>6C8FD043-55A8-8CC9-6930-F363C3DD3443</sourcePk>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>91F7DA63-F4F8-A8E8-4199-03D0FF3AF251</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0853F92C-8D7E-F0CB-1495-ED071BE5B9EB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
