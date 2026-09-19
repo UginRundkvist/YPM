@@ -78,6 +78,7 @@
 <engineerTo>
 <item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>

@@ -9,7 +9,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ОПЕРАЦИЯ_ЭТАП_СТАДИЯ_код_проекта" id="ADB8C0C1-A7B8-374F-8F53-1929420B568D">
+<Column name="ОПЕРАЦИЯ_ЭТАП_СТАДИЯ_ПРОЕКТ_код_проекта" id="ADB8C0C1-A7B8-374F-8F53-1929420B568D">
 <sourceDDLFile>model.sql</sourceDDLFile>
 <createdBy>zerd</createdBy>
 <createdTime>2026-09-18 14:21:33 UTC</createdTime>
@@ -33,6 +33,7 @@
 <ownerDesignName>datapzh</ownerDesignName>
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>D6F82411-728F-E360-37FE-152D473BE4E4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
@@ -66,6 +67,7 @@
 <ownerDesignName>datapzh</ownerDesignName>
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>E6F76693-21CF-8891-6965-6EDB157F5D30</importedID>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
@@ -82,6 +84,7 @@
 <ownerDesignName>datapzh</ownerDesignName>
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>415B721F-609B-A10E-2381-E4470C254BA1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>

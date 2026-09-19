@@ -67,6 +67,7 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>938557D0-BF46-F943-4AE6-BAB396AD2671</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -105,6 +106,7 @@
 <engineerTo>
 <item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>

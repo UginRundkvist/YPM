@@ -91,6 +91,7 @@
 <ownerDesignName>datapzh</ownerDesignName>
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>64932BA3-3AEB-4282-6B16-8BB75C10D17F</importedID>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>

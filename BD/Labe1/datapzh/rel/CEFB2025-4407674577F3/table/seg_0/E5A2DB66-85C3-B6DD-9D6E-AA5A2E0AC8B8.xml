@@ -33,6 +33,7 @@
 <ownerDesignName>datapzh</ownerDesignName>
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>1DA5EC91-C853-A651-204F-189E2AF413FA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
@@ -49,6 +50,7 @@
 <ownerDesignName>datapzh</ownerDesignName>
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>82437C16-6C52-7640-750F-EE02E47AF240</importedID>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
@@ -107,6 +109,7 @@
 <ownerDesignName>datapzh</ownerDesignName>
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>386ACD98-5E6C-92C6-B442-F70449367A83</importedID>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>

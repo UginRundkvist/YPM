@@ -10,7 +10,6 @@ import os
 np.random.seed(42)
 random.seed(42)
 
-# TRAINING_MODE = "mini_batch"
 LEARNING_RATE = 0.01
 BATCH_SIZE = 128
 EPOCHS = 30
@@ -23,7 +22,7 @@ INITIALIZATION = { "relu": "he", "tanh": "xavier", "sigmoid":"he", "sigmoid":"xa
 
 DROPOUT_RATES = [ 0.0, 0.1, 0.2, 0.3]
 
-df = pd.read_csv('C:/Users/1/Desktop/IskIn/YPM-IskIm/iskin/Kyrs_4_sem/WineQT.csv', sep=';')
+df = pd.read_csv('/home/zerd/all/YPM-IskIm/iskin/Kyrs_4_sem/WineQT.csv', sep=';')
 
 print(f"\nИсходный размер датасета: {df.shape}")
 print(f"Колонки: {df.columns.tolist()}")

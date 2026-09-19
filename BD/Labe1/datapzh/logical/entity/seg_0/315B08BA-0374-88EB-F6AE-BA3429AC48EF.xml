@@ -39,6 +39,7 @@
 <item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
 </engineerTo>
 <referedAttribute>CDC85F2A-EFDA-04DC-ED12-7C6ED94D0B94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -66,6 +67,7 @@
 <item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
 </engineerTo>
 <referedAttribute>E1C1D140-4524-E9E7-C22D-5A6DDAC56CF5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -79,6 +81,7 @@
 <item key="CEFB2025-F1A8-201F-F183-4407674577F3" value="true"/>
 </engineerTo>
 <referedAttribute>0B0E1C2E-6F73-5DBA-6AC9-05102A6357C4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>

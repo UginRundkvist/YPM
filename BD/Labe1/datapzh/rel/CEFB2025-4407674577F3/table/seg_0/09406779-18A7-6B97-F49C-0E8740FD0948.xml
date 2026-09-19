@@ -65,6 +65,7 @@
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>36528552-D494-F7DB-6AEE-9905E895AC4F</importedID>
 <nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <domain>435195D0-9132-32C2-DB55-EE4B0984F651</domain>
@@ -108,6 +109,7 @@
 <ownerDesignName>datapzh</ownerDesignName>
 <nameHasQuotes>true</nameHasQuotes>
 <importedID>1A597084-BAC1-E120-70B0-38E4C8C3B8D6</importedID>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
