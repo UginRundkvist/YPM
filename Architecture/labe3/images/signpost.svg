@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200">
+  <rect x="0" y="0" width="240" height="200" fill="#ffffff" stroke="#000000"/>
+  <rect x="113" y="30" width="12" height="150" fill="#666666"/>
+  <path d="M113 50 H50 L36 62 L50 74 H113 Z" fill="#cccccc" stroke="#000000"/>
+  <text x="58" y="67" font-family="Arial" font-size="12" fill="#000000">HTML</text>
+  <path d="M125 85 H196 L210 97 L196 109 H125 Z" fill="#cccccc" stroke="#000000"/>
+  <text x="140" y="102" font-family="Arial" font-size="12" fill="#000000">CSS</text>
+  <path d="M113 120 H44 L30 132 L44 144 H113 Z" fill="#cccccc" stroke="#000000"/>
+  <text x="52" y="137" font-family="Arial" font-size="12" fill="#000000">Формы</text>
+</svg>

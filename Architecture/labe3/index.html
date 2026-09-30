@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Язык HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Язык HTML</h1>
+
+<img class="illustration" src="images/signpost.svg" alt="Указатель" width="240" height="200">
+
+<p>
+    HTML - язык разметки (форматирования) текстовых документов,
+    ссылающихся на другие документы.
+</p>
+
+<h2>Функции HTML:</h2>
+
+<ul>
+    <li>поддержка состава, структуры, связей документов;</li>
+    <li>поддержка внешнего вида документов.</li>
+</ul>
+
+<div class="clear"></div>
+
+<h2>Возможности HTML</h2>
+
+<table>
+    <tr>
+        <th>Возможности</th>
+        <th>Тэги</th>
+    </tr>
+    <tr>
+        <td>Стили</td>
+        <td>B, I, H1, FONT, ...</td>
+    </tr>
+    <tr>
+        <td>Списки</td>
+        <td>UL, OL, LI, ...</td>
+    </tr>
+    <tr>
+        <td>Таблицы</td>
+        <td>TABLE, TR, TD, ...</td>
+    </tr>
+</table>
+
+<h2>Формы</h2>
+
+<p>Позволяют вводить данные и отправлять их на сервер.</p>
+
+<form action="submit.html" method="post">
+
+    <p>
+        <label for="name">Введите Ваше имя:</label>
+        <input type="text" id="name" name="name" size="40">
+    </p>
+
+    <p>
+        <label for="message">Введите Ваше сообщение:</label>
+    </p>
+
+    <p>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сброс">
+    </p>
+
+</form>
+
+<h2>Каскадные таблицы стилей (CSS)</h2>
+
+<p>Позволяют гибко менять внешний вид документов.</p>
+
+<p>
+    <a href="page2.html">Ссылка на другую страницу</a>
+</p>
+
+<hr>
+
+</body>
+</html>
