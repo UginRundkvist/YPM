@@ -1,5 +1,8 @@
 import random
 import math
+import matplotlib.pyplot as plt
+
+random.seed(11)  # фиксирует выборку: числа совпадают с отчётом (строку можно убрать)
 
 N = 80
 q = 12
@@ -22,23 +25,21 @@ for i in range(N):
     r = random.random()
     x.append(math.atan((4 * r - 1) / math.sqrt(3)))
 
-print(f"1-2) Первые {q} значений выборки:")
+print(f"Первые {q} смоделированных значений:")
 for i in range(q):
-    print(f"x[{i + 1}] = {x[i]:.6f}")
+    print(f"{i + 1}: {x[i]:.4f}")
 
-# Точные характеристики непрерывной величины — это интегралы по интервалу:
-# среднее = интеграл от значения, умноженного на плотность;
-# дисперсия = интеграл от квадрата значения на плотность, минус квадрат среднего.
-# Берём их численно, методом трапеций: разбиваем интервал на мелкие кусочки
-# и складываем площади трапеций под кривой.
+# Точные характеристики — интегралы по интервалу: среднее от значения на плотность,
+# дисперсия от квадрата значения на плотность минус квадрат среднего.
+# Берём их численно, методом трапеций.
 shagov = 100000
 shag = (b - a) / shagov
 
-M_tochnoe = 0.0
+M = 0.0
 for i in range(shagov):
     t1 = a + i * shag
     t2 = t1 + shag
-    M_tochnoe += (t1 * plotnost(t1) + t2 * plotnost(t2)) / 2 * shag
+    M += (t1 * plotnost(t1) + t2 * plotnost(t2)) / 2 * shag
 
 M_kvadrata = 0.0
 for i in range(shagov):
@@ -46,34 +47,44 @@ for i in range(shagov):
     t2 = t1 + shag
     M_kvadrata += (t1 * t1 * plotnost(t1) + t2 * t2 * plotnost(t2)) / 2 * shag
 
-D_tochnoe = M_kvadrata - M_tochnoe * M_tochnoe
+D = M_kvadrata - M * M
 
-print("\n3) Точные значения:")
-print(f"   M = {M_tochnoe:.6f}")
-print(f"   D = {D_tochnoe:.6f}")
-
-# Те же характеристики, восстановленные по выборке.
-# Среднее — сумма значений делить на их количество; считаем его полностью,
-# и только потом подставляем в формулу дисперсии.
+# Те же характеристики по выборке: среднее считаем полностью и только потом
+# подставляем в формулу дисперсии.
 summa = 0.0
 for i in range(N):
     summa = summa + x[i]
 m = summa / N
 
-# Оценка дисперсии: сумма квадратов делить на (N - 1),
-# минус N делить на (N - 1) и умножить на квадрат среднего.
 summa_kvadratov = 0.0
 for i in range(N):
     summa_kvadratov += x[i] * x[i]
 g = summa_kvadratov / (N - 1) - N / (N - 1) * m * m
 
-print("\n4) Оценки по выборке:")
-print(f"   m = {m:.6f}   (точное {M_tochnoe:.6f}, отклонение {abs(m - M_tochnoe):.6f})")
-print(f"   g = {g:.6f}   (точное {D_tochnoe:.6f}, отклонение {abs(g - D_tochnoe):.6f})")
+print("-" * 46)
+print(f"Точное математическое ожидание (M): {M:.4f}")
+print(f"Оценка математического ожидания (m): {m:.4f}")
+print(f"Разница (ошибка): {abs(m - M):.4f}")
+print("-" * 46)
+print(f"Точная дисперсия (D): {D:.4f}")
+print(f"Оценка дисперсии (g): {g:.4f}")
+print(f"Разница (ошибка): {abs(g - D):.4f}")
 
-# Проверка, что обратная функция выведена верно: вся выборка обязана лежать внутри интервала.
-print(f"\n   Все значения лежат в интервале ({a:.6f}; {b:.6f}):")
-print(f"   минимальное {min(x):.6f}, максимальное {max(x):.6f}")
+# График: гистограмма выборки и теоретическая плотность.
+setka = []
+znacheniya_plotnosti = []
+for i in range(401):
+    t = a + (b - a) * i / 400
+    setka.append(t)
+    znacheniya_plotnosti.append(plotnost(t))
 
-print("\n   Вывод: оценки близки к точным значениям — моделирование методом")
-print("   обратной функции выполнено верно.")
+plt.hist(x, bins=8, range=(a, b), density=True,
+         color="#3d6e99", edgecolor="black", label="Эмпирическая плотность")
+plt.plot(setka, znacheniya_plotnosti, color="#c0392b", linewidth=2.5,
+         label="Теоретическая плотность f(x)")
+plt.xlabel("Значения x")
+plt.ylabel("Плотность вероятности")
+plt.title("Сравнение эмпирической и теоретической плотностей распределения")
+plt.legend()
+plt.grid(axis="y", linestyle="--", alpha=0.5)
+plt.show()

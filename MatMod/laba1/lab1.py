@@ -136,7 +136,7 @@ for i in range(N):
 
 summa_z = 0.0
 for i in range(N):
-    summa_z = summa_z + z[i]
+    summa_z = summa_z + z[i] 
 midle_z = summa_z / N
 
 dispersion_z = 0.0
