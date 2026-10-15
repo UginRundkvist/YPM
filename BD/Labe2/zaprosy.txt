@@ -1,0 +1,91 @@
+-- 1
+select distinct Фамилия
+from ed_sales."СОТРУДНИКИ";
+
+-- 2
+select Фамилия, Ном_Отдела, Должность
+from ed_sales."СОТРУДНИКИ";
+
+-- 3
+select Фамилия, Ном_Отдела, Должность
+from ed_sales."СОТРУДНИКИ"
+where Ном_Отдела = 20;
+
+-- 4
+select Фамилия, оклад AS "месячная", оклад * 12 AS "годовая"
+from ed_sales."СОТРУДНИКИ"
+where должность IN ('ПРОДАВЕЦ', 'АНАЛИТИК');
+
+-- 5
+select *
+from ed_sales."СОТРУДНИКИ"
+order by дата_приема asc, должность;
+
+-- 6
+select Фамилия, надбавка, ROUND(надбавка * 0.10) AS премия
+from ed_sales."СОТРУДНИКИ"
+where надбавка > 0;
+
+-- 7
+select НАИМ_ОТДЕЛА,
+       UPPER(НАИМ_ОТДЕЛА)   AS "верхний",
+       LOWER(НАИМ_ОТДЕЛА)   AS "нижний",
+       INITCAP(НАИМ_ОТДЕЛА) AS "с большой буквы"
+from ed_sales."ОТДЕЛЫ";
+
+-- 8
+select Ном_Отдела, ROUND(AVG(оклад), 2) AS "средний оклад"
+from ed_sales."СОТРУДНИКИ"
+group by Ном_Отдела
+order by Ном_Отдела;
+
+-- 9
+select Ном_Отдела, COUNT(*) AS "сотрудников"
+from ed_sales."СОТРУДНИКИ"
+group by Ном_Отдела
+having COUNT(*) < 4;
+
+-- 10
+select Ном_Отдела, MAX(оклад + NVL(надбавка, 0)) AS "макс. доход"
+from ed_sales."СОТРУДНИКИ"
+group by Ном_Отдела
+order by Ном_Отдела;
+
+-- 11
+select SUM(оклад) AS "расходная сумма"
+from ed_sales."СОТРУДНИКИ"
+where должность IN ('ОПЕРАЦИОНИСТ', 'КАССИР');
+
+-- 12
+select COUNT(DISTINCT должность) AS "разных профессий"
+from ed_sales."СОТРУДНИКИ"
+where Ном_Отдела IN (10, 40);
+
+-- 13
+select Фамилия, Должность, LEVEL AS "уровень"
+from ed_sales."СОТРУДНИКИ"
+where Фамилия <> 'МАРТИНС'
+start with Фамилия = 'МАРТИНС'
+connect by prior ном_сотр = ном_нлнк
+       and Фамилия <> 'ХАРД';
+
+-- 14
+select ном_кл, Имя, Кредит
+from ed_sales."КЛИЕНТЫ"
+where Кредит >= 3500
+order by Кредит desc;
+
+-- 15
+select p.ном_прод, p.Наименование, p.Описание,
+       c.розн_цена AS "действующая цена",
+       c.мин_цена  AS "минимальная"
+from ed_sales."ПРОДУКТЫ" p
+     join ed_sales."ЦЕНЫ" c on c.ном_прод = p.ном_прод
+where p.Описание = 'ФУТБОЛ'
+  and c.дата_окон is null;
+
+-- 16
+select Фамилия, Должность, дата_приема
+from ed_sales."СОТРУДНИКИ"
+where MONTHS_BETWEEN(DATE '1998-01-01', дата_приема) >= 0
+  and MONTHS_BETWEEN(DATE '1998-01-01', дата_приема) < 12;
