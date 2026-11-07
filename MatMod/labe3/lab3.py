@@ -11,7 +11,7 @@ D = 80 / 441
 
 
 def g(x):
-    return C * x ** 1.5  # Для x от 0 до 2
+    return C * x ** 1.5  
 
 
 def neyman(n):
