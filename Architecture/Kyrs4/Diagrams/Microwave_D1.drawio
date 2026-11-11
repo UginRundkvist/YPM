@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="microwave-use-case" name="Варианты использования">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="system" value="Система управления микроволновой печью" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;rounded=0;verticalAlign=top;align=center;spacingTop=20;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="290" y="60" width="850" height="760" />
+        </mxCell>
+        <mxCell id="user" value="Пользователь" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="370" width="65" height="110" />
+        </mxCell>
+        <mxCell id="time" value="Задать время нагрева" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;ellipse;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="150" width="280" height="65" />
+        </mxCell>
+        <mxCell id="user-time" value="" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user" target="time">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="power" value="Выбрать мощность" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;ellipse;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="255" width="280" height="65" />
+        </mxCell>
+        <mxCell id="user-power" value="" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user" target="power">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="start" value="Запустить нагрев" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;ellipse;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="360" width="280" height="65" />
+        </mxCell>
+        <mxCell id="user-start" value="" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user" target="start">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="resume" value="Возобновить нагрев" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;ellipse;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="465" width="280" height="65" />
+        </mxCell>
+        <mxCell id="user-resume" value="" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user" target="resume">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="pause" value="Приостановить нагрев" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;ellipse;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="570" width="280" height="65" />
+        </mxCell>
+        <mxCell id="user-pause" value="" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user" target="pause">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="cancel" value="Отменить приготовление" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;ellipse;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="675" width="280" height="65" />
+        </mxCell>
+        <mxCell id="user-cancel" value="" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="user" target="cancel">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="check" value="Проверить возможность&#10;нагрева" style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;ellipse;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="360" width="290" height="95" />
+        </mxCell>
+        <mxCell id="start-include" value="«include»" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.25;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="start" target="check">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="resume-include" value="«include»" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;dashed=1;dashPattern=6 4;endArrow=open;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.75;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="resume" target="check">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="conditions" value="Условия запуска и возобновления:&#10;• дверца закрыта;&#10;• оставшееся время больше нуля.&#10;&#10;Если условие не выполнено,&#10;нагрев не включается." style="html=0;fontFamily=Arial;fontSize=18;strokeColor=#000000;fillColor=#ffffff;whiteSpace=wrap;shape=note;size=18;align=left;verticalAlign=middle;spacing=14;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="550" width="300" height="175" />
+        </mxCell>
+        <mxCell id="conditions-link" value="" style="html=0;fontFamily=Arial;fontSize=17;strokeColor=#000000;endArrow=none;startArrow=none;rounded=0;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="check" target="conditions">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

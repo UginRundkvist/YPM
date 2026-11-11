@@ -74,10 +74,18 @@ select  ном_сотр, Фамилия, ном_нлнк
 from ed_sales."СОТРУДНИКИ";
 
 -- 14
-select ном_кл, Имя, Кредит
-from ed_sales."КЛИЕНТЫ"
-where Кредит >= 3500
-order by Кредит desc;
+-- 14. Комбинированный запрос
+SELECT ном_кл, Имя, Кредит
+FROM ed_sales."КЛИЕНТЫ"
+WHERE Кредит > 3500
+
+UNION
+
+SELECT ном_кл, Имя, Кредит
+FROM ed_sales."КЛИЕНТЫ"
+WHERE Кредит = 3500
+
+ORDER BY Кредит DESC;
 
 -- 15
 select p.ном_прод, p.Наименование, p.Описание,

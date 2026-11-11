@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="microwave-classes" name="Классы">
+    <mxGraphModel grid="1" gridSize="10" guides="1" connect="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1250" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Система управления микроволновой печью — диаграмма классов" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;text;strokeColor=none;fillColor=none;align=center;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="20" width="1240" height="50" />
+        </mxCell>
+        <mxCell id="panel" value="ПанельУправления" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;swimlane;startSize=40;horizontal=1;collapsible=0;fontStyle=1;fontSize=20;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="470" y="110" width="460" height="215" />
+        </mxCell>
+        <mxCell id="panel-attrs" value="- текстДисплея: String" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="panel">
+          <mxGeometry as="geometry" x="0" y="40" width="460" height="55" />
+        </mxCell>
+        <mxCell id="panel-ops" value="+ передатьВремя(секунды: Integer): void&#10;+ передатьМощность(проценты: Integer): void&#10;+ передатьКоманду(команда: String): void&#10;+ показатьСообщение(текст: String): void" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="panel">
+          <mxGeometry as="geometry" x="0" y="95" width="460" height="120" />
+        </mxCell>
+        <mxCell id="controller" value="КонтроллерПечи" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;swimlane;startSize=40;horizontal=1;collapsible=0;fontStyle=1;fontSize=20;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="470" y="390" width="460" height="320" />
+        </mxCell>
+        <mxCell id="controller-attrs" value="- состояние: String" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="controller">
+          <mxGeometry as="geometry" x="0" y="40" width="460" height="55" />
+        </mxCell>
+        <mxCell id="controller-ops" value="+ задатьВремя(секунды: Integer): void&#10;+ выбратьМощность(проценты: Integer): void&#10;+ запустить(): void&#10;+ приостановить(): void&#10;+ возобновить(): void&#10;+ отменить(): void&#10;+ обработатьОткрытиеДверцы(): void&#10;+ обработатьОкончаниеВремени(): void&#10;- можноНагревать(): Boolean" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="controller">
+          <mxGeometry as="geometry" x="0" y="95" width="460" height="225" />
+        </mxCell>
+        <mxCell id="door" value="ДатчикДверцы" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;swimlane;startSize=40;horizontal=1;collapsible=0;fontStyle=1;fontSize=20;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="870" width="340" height="155" />
+        </mxCell>
+        <mxCell id="door-attrs" value="- закрыта: Boolean" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="door">
+          <mxGeometry as="geometry" x="0" y="40" width="340" height="55" />
+        </mxCell>
+        <mxCell id="door-ops" value="+ дверцаЗакрыта(): Boolean" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="door">
+          <mxGeometry as="geometry" x="0" y="95" width="340" height="60" />
+        </mxCell>
+        <mxCell id="timer" value="Таймер" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;swimlane;startSize=40;horizontal=1;collapsible=0;fontStyle=1;fontSize=20;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="530" y="870" width="360" height="265" />
+        </mxCell>
+        <mxCell id="timer-attrs" value="- остатокСекунд: Integer&#10;- активен: Boolean" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="timer">
+          <mxGeometry as="geometry" x="0" y="40" width="360" height="80" />
+        </mxCell>
+        <mxCell id="timer-ops" value="+ задатьВремя(секунды: Integer): void&#10;+ запустить(): void&#10;+ остановить(): void&#10;+ сбросить(): void&#10;+ получитьОстаток(): Integer" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="timer">
+          <mxGeometry as="geometry" x="0" y="120" width="360" height="145" />
+        </mxCell>
+        <mxCell id="magnetron" value="Магнетрон" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;swimlane;startSize=40;horizontal=1;collapsible=0;fontStyle=1;fontSize=20;align=center;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="870" width="360" height="220" />
+        </mxCell>
+        <mxCell id="magnetron-attrs" value="- мощностьПроцентов: Integer&#10;- включён: Boolean" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="magnetron">
+          <mxGeometry as="geometry" x="0" y="40" width="360" height="80" />
+        </mxCell>
+        <mxCell id="magnetron-ops" value="+ задатьМощность(проценты: Integer): void&#10;+ включить(): void&#10;+ выключить(): void" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;rounded=0;align=left;verticalAlign=top;spacing=10;whiteSpace=wrap;" vertex="1" parent="magnetron">
+          <mxGeometry as="geometry" x="0" y="120" width="360" height="100" />
+        </mxCell>
+        <mxCell id="panel-controller" value="команды и отображение" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;labelBackgroundColor=#ffffff;fontSize=15;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="panel" target="controller">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="panel-controller-a" value="1" style="edgeLabel;html=0;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=16;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="panel-controller">
+          <mxGeometry as="geometry" x="-0.85" y="14" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="panel-controller-b" value="1" style="edgeLabel;html=0;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=16;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="panel-controller">
+          <mxGeometry as="geometry" x="0.85" y="14" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="controller-door" value="контроль дверцы" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;labelBackgroundColor=#ffffff;fontSize=15;exitX=0.1;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="controller" target="door">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="controller-door-a" value="1" style="edgeLabel;html=0;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=16;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="controller-door">
+          <mxGeometry as="geometry" x="-0.85" y="14" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="controller-door-b" value="1" style="edgeLabel;html=0;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=16;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="controller-door">
+          <mxGeometry as="geometry" x="0.85" y="14" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="controller-timer" value="управление временем" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;labelBackgroundColor=#ffffff;fontSize=15;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="controller" target="timer">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="controller-timer-a" value="1" style="edgeLabel;html=0;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=16;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="controller-timer">
+          <mxGeometry as="geometry" x="-0.85" y="14" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="controller-timer-b" value="1" style="edgeLabel;html=0;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=16;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="controller-timer">
+          <mxGeometry as="geometry" x="0.85" y="14" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="controller-magnetron" value="управление нагревом" style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;startArrow=none;labelBackgroundColor=#ffffff;fontSize=15;exitX=0.9;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="controller" target="magnetron">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="controller-magnetron-a" value="1" style="edgeLabel;html=0;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=16;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="controller-magnetron">
+          <mxGeometry as="geometry" x="-0.85" y="14" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="controller-magnetron-b" value="1" style="edgeLabel;html=0;align=center;verticalAlign=middle;resizable=0;fontFamily=Arial;fontSize=16;labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="controller-magnetron">
+          <mxGeometry as="geometry" x="0.85" y="14" relative="1">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note" value="Принятые ограничения: один экземпляр каждого класса на одну печь.&#10;Состояние контроллера: «Готовность», «Нагрев», «Пауза». Время задаётся в секундах; мощность — от 1 до 100 %.&#10;Контроллер разрешает нагрев только при закрытой дверце и положительном остатке времени." style="html=0;fontFamily=Arial;fontSize=16;strokeColor=#000000;fillColor=#ffffff;shape=note;size=18;align=left;spacing=12;whiteSpace=wrap;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="1135" width="1280" height="95" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
