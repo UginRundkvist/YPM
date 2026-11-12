@@ -1,0 +1,18 @@
+-- ШАГ 01. Создать владельца ZERD.
+-- Лабораторная работа 3. Вариант 4.
+-- Подключение: SYSTEM. Служба FREEPDB1.
+-- Выделить нужный блок целиком и выполнить F5.
+
+-- Только для нового экземпляра базы, например на ноутбуке.
+-- Если ZERD уже создан, этот файл пропустить.
+SET DEFINE ON
+SET VERIFY OFF
+ACCEPT owner_password CHAR PROMPT 'Пароль нового пользователя ZERD: ' HIDE
+
+CREATE USER Zerd IDENTIFIED BY "&owner_password"
+    DEFAULT TABLESPACE users
+    QUOTA 20M ON users;
+
+UNDEFINE owner_password
+GRANT CREATE SESSION, CREATE TABLE, CREATE VIEW,
+      CREATE TRIGGER, CREATE PROCEDURE TO Zerd;

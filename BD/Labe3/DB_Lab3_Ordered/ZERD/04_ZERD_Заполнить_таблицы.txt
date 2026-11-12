@@ -1,0 +1,95 @@
+-- ШАГ 04. Заполнить таблицы.
+-- Лабораторная работа 3. Вариант 4.
+-- Подключение: ZERD. Служба FREEPDB1.
+-- Выделить нужный блок целиком и выполнить F5.
+
+-- Исправления противоречий задания:
+-- b_note расширяется; добавляется p_area.
+-- Заселения: 50 -> 450, 51 -> 451, 52 -> 452.
+-- Ордер здания 18: 404 -> 405; проживание 305 ссылается на 405.
+-- id_bas_sal_date DATE заменяется на id_bas_sal INTEGER NOT NULL.
+-- Это допущения рабочего решения, отражённые в отчёте.
+
+ALTER TABLE Building
+MODIFY (b_note VARCHAR2(100 CHAR));
+ALTER TABLE Premises ADD (p_area INTEGER);
+
+INSERT INTO Building (id_building, b_name, b_note, b_start)
+VALUES (11, 'К-1', 'Здание учебного корпуса № 1',
+        DATE '2010-01-01');
+INSERT INTO Building (id_building, b_name, b_note, b_start)
+VALUES (17, 'ЗО-1', 'Здание общежития № 1',
+        DATE '2010-01-01');
+INSERT INTO Building (id_building, b_name, b_note, b_start)
+VALUES (18, 'ЗО-2', 'Здание общежития № 2',
+        DATE '2010-01-01');
+COMMIT;
+
+SELECT * FROM Building ORDER BY id_building;
+
+INSERT INTO Premises
+    (id_premises, p_name, p_d_start, p_area, id_building)
+VALUES (1, '110', DATE '2010-06-22', 2, 17);
+INSERT INTO Premises
+    (id_premises, p_name, p_d_start, p_area, id_building)
+VALUES (2, '112', DATE '2010-06-22', 5, 18);
+INSERT INTO Premises
+    (id_premises, p_name, p_d_start, p_area, id_building)
+VALUES (4, '115', DATE '2010-06-22', 2, 18);
+INSERT INTO Premises
+    (id_premises, p_name, p_d_start, p_area, id_building)
+VALUES (5, '1110', DATE '2010-06-22', 3, 17);
+INSERT INTO Premises
+    (id_premises, p_name, p_d_start, p_area, id_building)
+VALUES (7, '211', DATE '2010-05-22', 4, 17);
+INSERT INTO Premises
+    (id_premises, p_name, p_d_start, p_area, id_building)
+VALUES (8, '1111', DATE '2010-05-22', 50, 11);
+COMMIT;
+
+SELECT * FROM Premises ORDER BY id_premises;
+
+INSERT INTO Settling (id_settling, id_e, d_start)
+VALUES (50, '1', DATE '2011-08-01');
+INSERT INTO Settling (id_settling, id_e, d_start)
+VALUES (51, '2', DATE '2011-09-01');
+INSERT INTO Settling (id_settling, id_e, d_start)
+VALUES (52, '4', DATE '2011-08-15');
+UPDATE Settling SET id_settling = id_settling + 400
+WHERE id_settling IN (50, 51, 52);
+
+INSERT INTO Warrant (id_warrant, id_building, id_settling)
+VALUES (400, 17, 450);
+INSERT INTO Warrant (id_warrant, id_building, id_settling)
+VALUES (404, 17, 452);
+INSERT INTO Warrant (id_warrant, id_building, id_settling)
+VALUES (405, 18, 452);
+INSERT INTO Warrant (id_warrant, id_building, id_settling)
+VALUES (406, 17, 451);
+COMMIT;
+
+SELECT * FROM Settling ORDER BY id_settling;
+SELECT * FROM Warrant ORDER BY id_warrant;
+
+ALTER TABLE Residing
+RENAME COLUMN id_bas_sal_date TO id_bas_sal;
+ALTER TABLE Residing MODIFY (id_bas_sal INTEGER);
+
+INSERT INTO Residing (id_residing, id_warrant, id_premises,
+                      d_start, d_end, id_bas_sal)
+VALUES (301, 400, 5, DATE '2011-08-02', DATE '2011-09-30', 90);
+INSERT INTO Residing (id_residing, id_warrant, id_premises,
+                      d_start, d_end, id_bas_sal)
+VALUES (302, 404, 7, DATE '2011-08-15', DATE '2011-09-15', 91);
+INSERT INTO Residing (id_residing, id_warrant, id_premises,
+                      d_start, d_end, id_bas_sal)
+VALUES (305, 405, 2, DATE '2011-09-16', DATE '2011-09-30', 92);
+INSERT INTO Residing (id_residing, id_warrant, id_premises,
+                      d_start, d_end, id_bas_sal)
+VALUES (306, 400, 1, DATE '2011-10-01', NULL, 93);
+INSERT INTO Residing (id_residing, id_warrant, id_premises,
+                      d_start, d_end, id_bas_sal)
+VALUES (307, 406, 1, DATE '2011-08-01', NULL, 94);
+
+COMMIT;
+SELECT * FROM Residing ORDER BY id_residing;

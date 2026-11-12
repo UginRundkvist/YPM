@@ -1,0 +1,53 @@
+-- ШАГ 02. Создать пять таблиц.
+-- Лабораторная работа 3. Вариант 4.
+-- Подключение: ZERD. Служба FREEPDB1.
+-- Выделить нужный блок целиком и выполнить F5.
+
+CREATE TABLE Building (
+    id_building INTEGER,
+    b_name CHAR(10),
+    b_start DATE NOT NULL,
+    b_note CHAR(10),
+    CONSTRAINT pk_building PRIMARY KEY (id_building)
+);
+
+CREATE TABLE Settling (
+    id_settling INTEGER,
+    id_e VARCHAR2(30) NOT NULL,
+    d_start DATE,
+    CONSTRAINT pk_settling PRIMARY KEY (id_settling)
+);
+
+CREATE TABLE Warrant (
+    id_warrant INTEGER,
+    id_building INTEGER,
+    id_settling INTEGER,
+    CONSTRAINT pk_warrant PRIMARY KEY (id_warrant),
+    CONSTRAINT fk_warrant_building
+        FOREIGN KEY (id_building)
+        REFERENCES Building (id_building)
+);
+
+CREATE TABLE Premises (
+    id_premises INTEGER,
+    p_name VARCHAR2(30) NOT NULL,
+    p_d_start DATE NOT NULL,
+    id_building INTEGER,
+    CONSTRAINT pk_premises PRIMARY KEY (id_premises),
+    CONSTRAINT fk_premises_building
+        FOREIGN KEY (id_building)
+        REFERENCES Building (id_building)
+);
+
+CREATE TABLE Residing (
+    id_residing INTEGER,
+    id_warrant INTEGER,
+    id_premises INTEGER,
+    d_start DATE NOT NULL,
+    d_end DATE,
+    id_bas_sal_date DATE NOT NULL,
+    CONSTRAINT pk_residing PRIMARY KEY (id_residing),
+    CONSTRAINT fk_residing_warrant
+        FOREIGN KEY (id_warrant)
+        REFERENCES Warrant (id_warrant)
+);

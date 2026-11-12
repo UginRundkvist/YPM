@@ -1,0 +1,20 @@
+-- ШАГ 03. Добавить ограничения.
+-- Лабораторная работа 3. Вариант 4.
+-- Подключение: ZERD. Служба FREEPDB1.
+-- Выделить нужный блок целиком и выполнить F5.
+
+ALTER TABLE Warrant
+ADD CONSTRAINT fk_warrant_settling
+    FOREIGN KEY (id_settling)
+    REFERENCES Settling (id_settling);
+
+ALTER TABLE Warrant
+ADD CONSTRAINT chk_warrant_settling
+    CHECK (id_settling > id_warrant);
+
+ALTER TABLE Building
+MODIFY (b_name DEFAULT '_' NOT NULL);
+
+-- Если NOT NULL уже установлен, полную последнюю команду
+-- повторно не выполнять. Только изменение DEFAULT при необходимости:
+-- ALTER TABLE Building MODIFY (b_name DEFAULT '_');

@@ -1,0 +1,9 @@
+-- ШАГ 05. Изменить дату окончания.
+-- Лабораторная работа 3. Вариант 4.
+-- Подключение: ZERD. Служба FREEPDB1.
+-- Выделить нужный блок целиком и выполнить F5.
+
+UPDATE Residing SET d_end = DATE '2012-06-01'
+WHERE id_warrant = 406;
+COMMIT;
+SELECT * FROM Residing ORDER BY id_residing;

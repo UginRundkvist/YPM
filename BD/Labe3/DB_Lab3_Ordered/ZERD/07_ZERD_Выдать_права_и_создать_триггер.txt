@@ -1,0 +1,36 @@
+-- ШАГ 07. Выдать права и создать триггер.
+-- Лабораторная работа 3. Вариант 4.
+-- Подключение: ZERD. Служба FREEPDB1.
+-- Выделить нужный блок целиком и выполнить F5.
+
+-- Пункт 11
+GRANT SELECT ON Residing TO user1;
+GRANT UPDATE (d_start, d_end) ON Residing TO user1;
+
+-- Пункт 12. Первый этап: право USER2 с возможностью передачи.
+GRANT SELECT ON Settling TO user2 WITH GRANT OPTION;
+
+-- Пункт 13. Триггер и права USER4.
+CREATE OR REPLACE TRIGGER trg_warrant_user4
+BEFORE INSERT OR UPDATE ON Warrant
+FOR EACH ROW
+DECLARE
+    v_count INTEGER;
+BEGIN
+    IF SYS_CONTEXT('USERENV', 'SESSION_USER') = 'USER4' THEN
+        SELECT COUNT(*) INTO v_count
+        FROM Settling
+        WHERE id_settling = :NEW.id_settling
+          AND d_start IS NOT NULL;
+
+        IF v_count = 0 THEN
+            RAISE_APPLICATION_ERROR(
+                -20001,
+                'Для ордера требуется заселение с заполненной датой начала'
+            );
+        END IF;
+    END IF;
+END;
+/
+SHOW ERRORS TRIGGER trg_warrant_user4;
+GRANT INSERT, UPDATE ON Warrant TO user4;

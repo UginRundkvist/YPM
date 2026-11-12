@@ -1,0 +1,35 @@
+-- ШАГ 17. Проверить итоговые данные.
+-- Лабораторная работа 3. Вариант 4.
+-- Подключение: ZERD. Служба FREEPDB1.
+-- Выделить нужный блок целиком и выполнить F5.
+
+SELECT * FROM Building ORDER BY id_building;
+SELECT * FROM Premises ORDER BY id_premises;
+SELECT * FROM Settling ORDER BY id_settling;
+SELECT * FROM Warrant ORDER BY id_warrant;
+SELECT * FROM Residing ORDER BY id_residing;
+
+SELECT 'BUILDING' AS table_name, COUNT(*) AS row_count
+FROM Building
+UNION ALL
+SELECT 'PREMISES', COUNT(*) FROM Premises
+UNION ALL
+SELECT 'SETTLING', COUNT(*) FROM Settling
+UNION ALL
+SELECT 'WARRANT', COUNT(*) FROM Warrant
+UNION ALL
+SELECT 'RESIDING', COUNT(*) FROM Residing;
+
+-- Ожидается: Building 3, Premises 6, Settling 3, Warrant 4, Residing 5.
+
+-- Состояние ограничений
+SELECT table_name, constraint_name, constraint_type, status
+FROM user_constraints
+WHERE table_name IN ('BUILDING', 'PREMISES', 'SETTLING',
+                     'WARRANT', 'RESIDING')
+ORDER BY table_name, constraint_name;
+
+-- Ошибки компиляции триггера: ожидается пустой результат.
+SELECT line, position, text FROM user_errors
+WHERE name = 'TRG_WARRANT_USER4'
+ORDER BY sequence;

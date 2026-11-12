@@ -1,0 +1,13 @@
+-- ШАГ 15. Ограничить просмотр USER1.
+-- Лабораторная работа 3. Вариант 4.
+-- Подключение: ZERD. Служба FREEPDB1.
+-- Выделить нужный блок целиком и выполнить F5.
+
+CREATE OR REPLACE VIEW Residing_Completed AS
+SELECT id_residing, id_warrant, id_premises,
+       d_start, d_end, id_bas_sal
+FROM Residing
+WHERE d_end IS NOT NULL;
+
+REVOKE SELECT ON Residing FROM user1;
+GRANT SELECT ON Residing_Completed TO user1;
