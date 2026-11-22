@@ -33,7 +33,6 @@ def estimate_statistics(sample):
     m3 = fsum(d**3 for d in deviations) / size
     m4 = fsum(d**4 for d in deviations) / size
 
-    # Поправки на объём выборки из формул (15) и (16) методички.
     corrected_m3 = size**2 * m3 / ((size - 1) * (size - 2))
     denominator = (size - 1) * (size**2 - 3 * size + 3)
     corrected_m4 = (size**3 * m4 - size**2 * variance**2 / (size - 1)) / denominator
@@ -46,7 +45,6 @@ sample = generate_sample(SAMPLE_SIZE)
 estimates = estimate_statistics(sample)
 size = len(sample)
 
-# Строим гистограмму и теоретическую нормальную кривую.
 distribution = norm(loc=MU, scale=SIGMA)
 counts, edges = np.histogram(sample, bins=BINS)
 widths = np.diff(edges)
@@ -64,14 +62,13 @@ axes.legend()
 output = Path("lab5_variant19_histogram.png")
 figure.savefig(output, dpi=160)
 
-# Для критерия Пирсона крайние интервалы включают бесконечные хвосты.
 cdf = [0.0, *distribution.cdf(edges[1:-1]), 1.0]
 expected = size * np.diff(cdf)
 if min(expected) < 5:
     raise ValueError("Для критерия Пирсона нужно объединить интервалы с малой ожидаемой частотой.")
 
 statistic = fsum((counts - expected)**2 / expected)
-degrees_of_freedom = BINS - 1  # μ и σ заданы, сумма частот равна объёму выборки.
+degrees_of_freedom = BINS - 1  
 p_value = chi2.sf(statistic, degrees_of_freedom)
 
 print(f"Вариант 19: μ = {MU}, σ = {SIGMA}, n = {N_SUMMANDS}, N = {SAMPLE_SIZE}, K = {BINS}")
